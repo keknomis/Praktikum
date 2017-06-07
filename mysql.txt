@@ -1,0 +1,4 @@
+strežnik: svizec2.informatika.uni-mb.si:3306
+uporabnik:s1p1_gradiva 
+shema:s1p1_gradiva
+geslo:uoo43i
