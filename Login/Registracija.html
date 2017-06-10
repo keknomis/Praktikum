@@ -1,110 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-form {
-    border: 3px solid #f1f1f1;
-}
 
-input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
-}
-</style>
 <meta charset="UTF-8">
-<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="JS.js" ></script>
+<title>Evidenca izposojenega gradiva</title>
 </head>
-<body>
+<body class="body">
+<p align="center" id="ura"></p>
+<p align="center">Dobrodosli na nasi strani!</p>
 
-<form action="/action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ZacetnaStran.html">Evidence Izposojenega Gradiva</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Gradivo.html">Gradivo</a></li>
+      <li><a href="#">Uporabniki</a></li>
+      <li><a href="Onas.html">O nas</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Login.html"><span class="glyphicon glyphicon-user"></span> Prijava</a></li>
+      <li><a href=Registracija.html><span class="glyphicon glyphicon-log-in"></span> Registracija</a></li>
+    </ul>
   </div>
+</nav>
 
+<form action="reg.jsp">
   <div class="container">
   <label><b>Ime</b></label>
-    <input type="text" placeholder="Vnesite ime" name="name" required>
+    <input type="text" placeholder="Vnesite ime" name="fname" required>
     <label><b>Priimek</b></label>
     <input type="text" placeholder="Vnesite priimek" name="lname" required>
   
-    <label><b>Uporabnisko ime</b></label>
-    <input type="text" placeholder="Vnesite uporabnisko ime" name="uname" required>
     <label><b>E-naslov</b></label>
-    <input type="text" placeholder="Vnesite geslo" name="email" required>
+    <input type="text" placeholder="Vnesite E-naslov" name="email" required>
 
     <label><b>Geslo</b></label>
-    <input type="password" placeholder="Vnesite geslo" name="psw" required>
+    <input type="password" placeholder="Vnesite geslo" name="pwd" required>
     
         
-    <button type="submit">Registracija</button>
+    <a href="Login.html"><button type="submit"  class="buttonprijava">Registracija</button></a>
     
+ 
     
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Prekliči</button>
+    <a href="Login.html"><button type="button" class="cancelbtn">Preklici</button></a>
     
   </div>
 </form>
-
-
-
-
-	
 
 </body>
 </html>
