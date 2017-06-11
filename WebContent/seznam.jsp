@@ -64,7 +64,7 @@ ResultSet resultSet = null;
 <tr>
 
 </tr>
-<tr bgcolor="#A52A2A">
+<tr bgcolor="e7cdcd">
 <td><b>id</b></td>
 <td><b>Ime</b></td>
 <td><b>Priimek</b></td>
@@ -98,6 +98,50 @@ e.printStackTrace();
 }
 %>
 </table>
+
+
+<h2 align="center"><font><strong>Seznam Administratorjev</strong></font></h2>
+<table align="center" cellpadding="5" cellspacing="5" border="1">
+<tr>
+
+</tr>
+<tr bgcolor="e7cdcd">
+<td><b>id</b></td>
+<td><b>Ime</b></td>
+<td><b>Priimek</b></td>
+<td><b>Enaslov</b></td>
+
+</tr>
+<%
+try{ 
+connection = DriverManager.getConnection(connectionUrl+dbName, userId, password);
+statement=connection.createStatement();
+String sql ="SELECT * FROM administrator";
+
+resultSet = statement.executeQuery(sql);
+while(resultSet.next()){
+%>
+<tr bgcolor="#DEB887">
+
+<td><%=resultSet.getString("idAdministrator") %></td>
+<td><%=resultSet.getString("Administrator_Ime") %></td>
+<td><%=resultSet.getString("Administrator_Priimek") %></td>
+<td><%=resultSet.getString("Administrator_Enaslov") %></td>
+
+
+</tr>
+
+<% 
+}
+
+} catch (Exception e) {
+e.printStackTrace();
+}
+%>
+</table>
+
+
+
 
 </body>
 </html>
