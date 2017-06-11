@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="JS.js" ></script>
+<title>Evidenca izposojenega gradiva</title>
+</head>
+<body class="body">
+<p align="center" id="ura"></p>
+<p align="center">Dobrodosli na nasi strani!</p>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="ZacetnaStran.html">Evidence Izposojenega Gradiva</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Gradiva.jsp">Gradivo</a></li>
+      <li><a href="DodajGradiva.html">Dodaj Gradivo</a></li>
+      <li><a href="Uporabniki.html">Uporabniki</a></li>
+      <li><a href="IzposojenoGradivo.html">Izposojeno Gradivo</a></li>
+      <li><a href="Onas.html">O nas</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Login.html"><span class="glyphicon glyphicon-user"></span> Prijava</a></li>
+      <li><a href=Registracija.html><span class="glyphicon glyphicon-log-in"></span> Registracija</a></li>
+    </ul>
+  </div>
+</nav>
+
+<form action="reg.jsp">
+  <div class="container">
+  <label><b>Ime</b></label>
+    <input type="text" placeholder="Vnesite ime" name="fname" required>
+    <label><b>Priimek</b></label>
+    <input type="text" placeholder="Vnesite priimek" name="lname" required>
+  
+    <label><b>E-naslov</b></label>
+    <input type="text" placeholder="Vnesite E-naslov" name="email" required>
+
+    <label><b>Geslo</b></label>
+    <input type="password" placeholder="Vnesite geslo" name="pwd" required>
+    
+        
+    <a href="Login.html"><button type="submit" onClick="" class="buttonprijava">Registracija</button></a>
+    
+    
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <a href="Login.html"><button type="button" class="cancelbtn">Preklici</button></a>
+    
+  </div>
+</form>
+
+</body>
+</html>
