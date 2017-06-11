@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"%>
- pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ page import ="java.sql.*" %>
 <%@ page import ="javax.sql.*" %>
 <%
@@ -14,13 +14,14 @@ if(rs.next())
 { 
 if(rs.getString(2).equals(pwd)) 
 { 
-	response.sendRedirect("PrijavaUspesno.html"); 
+	response.sendRedirect("PrijavaUspesno.html");  
 
 } 
 else 
 { 
-out.println("Napacno geslo poskusite ponovno"); 
+	response.sendRedirect("NapacnoGeslo.html"); 
 } 
-} 
+}else
+	response.sendRedirect("NapacnoGeslo.html");
  
 %>
