@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"%>
-	pageEncoding="ISO-8859-1"%>
+ pageEncoding="ISO-8859-1"%>
 <%@ page import ="java.sql.*" %>
 <%@ page import ="javax.sql.*" %>
 <%
@@ -14,7 +14,7 @@ if(rs.next())
 { 
 if(rs.getString(2).equals(pwd)) 
 { 
-out.println("Dobrodosli "+email); 
+	response.sendRedirect("PrijavaUspesno.html"); 
 
 } 
 else 
