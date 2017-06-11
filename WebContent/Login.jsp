@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"%>
- pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <%@ page import ="java.sql.*" %>
 <%@ page import ="javax.sql.*" %>
 <%
@@ -12,7 +12,7 @@ Statement st= con.createStatement();
 ResultSet rs=st.executeQuery("select Uporabnik_Enaslov,Uporabnik_geslo from uporabniki where Uporabnik_Enaslov='"+email+"'"); 
 if(rs.next()) 
 { 
-if(rs.getString(1).equals(pwd)) 
+if(rs.getString(2).equals(pwd)) 
 { 
 out.println("Dobrodosli "+email); 
 
